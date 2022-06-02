@@ -1,0 +1,73 @@
+.container {
+    font-size: 0;
+    position: relative;
+    user-select: none;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.cell-mask {
+    width: 100%;
+    height: 100%;
+}
+
+.cell {
+    position: relative;
+}
+
+.cell body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cell body:hover .cell-char {
+    transform: scale(1) rotateZ(-17deg);
+    transition: transform linear 0.15s 0s;
+}
+
+.row {
+    max-width: 64px;
+    text-align: center;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cell-char {
+    position: absolute;
+    left: 10%;
+    top: -10%;
+    width: 100%;
+    height: 100%;
+    font-weight: 900;
+    transform: scale(1.1) rotateZ(-17deg);
+    transition: transform linear 0.15s 0s;
+    text-align: center;
+    z-index: 1;
+}
+
+.loading-box {
+    text-align: center;
+    padding: 3rem;
+}
+
+@media screen and (min-width: 1280px) {
+    .row {
+        max-width: 5vw;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        flex: 1;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+}

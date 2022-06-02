@@ -1,0 +1,59 @@
+.container {
+    padding: 1rem 0 0.5rem 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flex-item {
+    flex: 1;
+    user-select: none;
+}
+
+.flex-center {
+    text-align: center;
+}
+
+.flex-center>.Mui-focusVisible {
+    background-color: unset;
+    background: unset;
+}
+
+.s-btn {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.input-box {
+    width: 100%;
+}
+
+.ip-addr,
+.ip-addr input {
+    width: 100%;
+    text-align: right;
+    word-wrap: none;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+.date-picker {
+    display: flex;
+    align-items: center;
+}
+
+.date-picker-input {
+    width: 100%;
+    float: 1;
+}
+
+.accordion {
+    background: none;
+}

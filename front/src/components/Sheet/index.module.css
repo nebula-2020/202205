@@ -1,0 +1,11 @@
+.container {
+    border-radius: 0;
+    background-color: unset;
+    background: none;
+}
+
+.table-cell {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

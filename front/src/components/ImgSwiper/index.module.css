@@ -1,0 +1,117 @@
+.content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.container:before,
+.item:before {
+    content: "";
+    float: left;
+    width: 100%;
+    height: 0;
+    padding: 0;
+    padding-bottom: 150%;
+    margin: 0;
+    z-index: -2147483648;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.item-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.item-text {
+    z-index: 0;
+    text-align: left;
+    font-size: 28px;
+    position: absolute;
+    top: 445px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 300px;
+    word-wrap: break-word;
+    overflow: hidden;
+    color: #fff;
+    font-weight: bold;
+}
+
+.item-text-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-bgc {
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    top: 0;
+    height: 1800px;
+    width: 1200px;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.item-blur div {
+    position: absolute;
+    height: 600px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-blur {
+    position: absolute;
+    left: -400px;
+    right: -400px;
+    bottom: -600px;
+    top: 0;
+    filter: blur(0.5em);
+    z-index: 0;
+    overflow: visible;
+}
+
+.content .swiper {
+    width: 100%;
+    height: 100%;
+}

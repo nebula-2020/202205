@@ -1,0 +1,25 @@
+.container foreignObject body {
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.forign-container {
+    width: 100%;
+    height: 100%;
+}
+
+.label {
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.rect {
+    transition: color ease-in-out 0 1s;
+}
